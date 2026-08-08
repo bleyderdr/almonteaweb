@@ -17,7 +17,7 @@
 
 /* LOGO */
 .navbar-logo {
-  width: 100px;
+  width: 105px;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -224,7 +224,7 @@
   }
 
   .navbar-logo img {
-    width: 90px;
+    width: 85px;
   }
 
   .navbar-toggle {
