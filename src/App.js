@@ -13,6 +13,7 @@ import NuestroCafe from "./pages/NuestroCafe";
 import TipsCafeteros from "./pages/TipsCafeteros.jsx";
 import Nosotros from "./pages/Nosotros.jsx";
 
+
 function App() {
 
   return (
