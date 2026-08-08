@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Footer() {
 
   return (
@@ -44,6 +46,8 @@ function Footer() {
 
             <a
               href="https://www.instagram.com/cafealmontea/"
+              target="_blank"
+              rel="noopener noreferrer"
               aria-label="Instagram"
             >
               ◎
@@ -65,25 +69,25 @@ function Footer() {
             Enlaces
           </h3>
 
-          <a href="/">
+          <Link to="/">
             Inicio
-          </a>
+          </Link>
 
-          <a href="/nuestro-cafe">
+          <Link to="/nuestro-cafe">
             Nuestro Café
-          </a>
+          </Link>
 
-          <a href="/tips-cafeteros">
+          <Link to="/tips-cafeteros">
             Tips Cafeteros
-          </a>
+          </Link>
 
-          <a href="/nosotros">
+          <Link to="/nosotros">
             Nosotros
-          </a>
+          </Link>
 
-          <a href="/contacto">
+          <Link to="/contacto">
             Contacto
-          </a>
+          </Link>
 
         </div>
 
