@@ -1,5 +1,6 @@
 import "../App.css";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
 
 function Home() {
 
@@ -64,12 +65,12 @@ function Home() {
               <span>◉</span>
             </a>
 
-            <a
-              href="/nuestro-cafe"
+            <link
+              to="/nuestro-cafe"
               className="btn-secondary"
             >
               CONOCE MÁS
-            </a>
+            </link>
 
           </div>
 
@@ -211,12 +212,12 @@ function Home() {
             caficultores y la tradición de nuestra tierra.
           </p>
 
-          <a
-            href="/nosotros"
+          <link
+            to="/nosotros"
             className="history-button"
           >
             CONÓCENOS MEJOR
-          </a>
+          </link>
 
         </div>
 
@@ -288,12 +289,12 @@ function Home() {
 
               <div className="product-buttons">
 
-                <a
-                  href="/nuestro-cafe"
+                <link
+                  to="/nuestro-cafe"
                   className="product-button saber-mas"
                 >
                   SABER MÁS
-                </a>
+                </link>
 
 
                 <a
