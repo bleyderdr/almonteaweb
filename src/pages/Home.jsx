@@ -65,12 +65,12 @@ function Home() {
               <span>◉</span>
             </a>
 
-            <link
+            <Link
               to="/nuestro-cafe"
               className="btn-secondary"
             >
               CONOCE MÁS
-            </link>
+            </Link>
 
           </div>
 
@@ -212,12 +212,12 @@ function Home() {
             caficultores y la tradición de nuestra tierra.
           </p>
 
-          <link
+          <Link
             to="/nosotros"
             className="history-button"
           >
             CONÓCENOS MEJOR
-          </link>
+          </Link>
 
         </div>
 
@@ -289,12 +289,12 @@ function Home() {
 
               <div className="product-buttons">
 
-                <link
+                <Link
                   to="/nuestro-cafe"
                   className="product-button saber-mas"
                 >
                   SABER MÁS
-                </link>
+                </Link>
 
 
                 <a
