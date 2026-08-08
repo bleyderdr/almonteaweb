@@ -212,7 +212,7 @@ function Home() {
           </p>
 
           <a
-            href="/almonteaweb/#/nosotros"
+            href="/nosotros"
             className="history-button"
           >
             CONÓCENOS MEJOR
