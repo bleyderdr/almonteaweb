@@ -5,79 +5,48 @@
 .navbar {
   width: 100%;
   height: 115px;
-
   background: #f7edda;
-
   display: flex;
   align-items: center;
-
   padding: 0 55px;
-
   box-sizing: border-box;
-
   border-bottom: 1px solid rgba(40, 30, 15, 0.15);
-
   position: relative;
-
   z-index: 1000;
 }
 
-
-/* =====================================
-   LOGO
-===================================== */
-
+/* LOGO */
 .navbar-logo {
-  width: 190px;
-
+  width: 100px;
   display: flex;
   align-items: center;
-
   text-decoration: none;
-
   flex-shrink: 0;
 }
 
 .navbar-logo img {
-  width: 125px;
-
+  width: 105px;
   height: auto;
-
   display: block;
 }
 
-
-/* =====================================
-   MENÚ
-===================================== */
-
+/* MENÚ DESKTOP */
 .navbar-menu {
   flex: 1;
-
   display: flex;
-
   justify-content: flex-end;
-
   align-items: center;
-
   gap: 38px;
-
   padding-right: 35px;
 }
 
 .navbar-menu a {
   text-decoration: none;
-
   color: #17140e;
-
   font-family: Arial, sans-serif;
-
   font-size: 13px;
-
   font-weight: 700;
-
   white-space: nowrap;
-
   transition: color 0.25s ease;
 }
 
@@ -85,100 +54,68 @@
   color: #3d6918;
 }
 
-
-/* =====================================
-   WHATSAPP DESKTOP
-===================================== */
+/* BOTÓN WHATSAPP (COMPARTIDO) */
+.navbar-whatsapp,
+.navbar-whatsapp-mobile {
+  border: none;
+  background: #3d6918;
+  color: white;
+  padding: 15px 20px;
+  border-radius: 7px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background 0.25s ease, transform 0.25s ease;
+}
 
 .navbar-whatsapp {
-  border: none;
-
-  background: #3d6918;
-
-  color: white;
-
-  padding: 15px 20px;
-
-  border-radius: 7px;
-
-  font-family: Arial, sans-serif;
-
-  font-size: 12px;
-
-  font-weight: 700;
-
-  cursor: pointer;
-
-  white-space: nowrap;
-
-  transition:
-    background 0.25s ease,
-    transform 0.25s ease;
-
   flex-shrink: 0;
 }
 
-.navbar-whatsapp:hover {
+.navbar-whatsapp:hover,
+.navbar-whatsapp-mobile:hover {
   background: #2d5010;
+}
 
+.navbar-whatsapp:hover {
   transform: translateY(-2px);
 }
 
 .navbar-whatsapp span {
   margin-left: 8px;
-
   font-size: 15px;
 }
 
+.navbar-whatsapp-mobile {
+  display: none;
+}
 
-/* =====================================
-   BOTÓN HAMBURGUESA
-===================================== */
-
+/* BOTÓN HAMBURGUESA */
 .navbar-toggle {
   display: none;
-
   width: 44px;
   height: 44px;
-
   padding: 0;
-
   margin-left: auto;
-
   border: none;
-
   background: transparent;
-
   cursor: pointer;
-
   flex-direction: column;
-
   align-items: center;
-
   justify-content: center;
-
   gap: 5px;
 }
 
 .navbar-toggle span {
   display: block;
-
   width: 24px;
   height: 2px;
-
   background: #17140e;
-
   border-radius: 2px;
-
-  transition:
-    transform 0.3s ease,
-    opacity 0.3s ease;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
-
-
-/* =====================================
-   ANIMACIÓN DEL MENÚ
-===================================== */
 
 .navbar-toggle-open span:nth-child(1) {
   transform: translateY(7px) rotate(45deg);
@@ -192,29 +129,22 @@
   transform: translateY(-7px) rotate(-45deg);
 }
 
-
 /* =====================================
-   WHATSAPP MÓVIL
+   MEDIA QUERIES
 ===================================== */
 
-.navbar-whatsapp-mobile {
-  display: none;
-}
-
-
-/* =====================================
-   TABLETS
-===================================== */
-
+/* TABLETS */
 @media (max-width: 1000px) {
-
   .navbar {
     padding: 0 25px;
   }
 
+  .navbar-logo img {
+    width: 100px;
+  }
+
   .navbar-menu {
     gap: 20px;
-
     padding-right: 20px;
   }
 
@@ -222,167 +152,73 @@
     font-size: 11px;
   }
 
-  .navbar-logo {
-    width: 150px;
-  }
-
-  .navbar-logo img {
-    width: 110px;
-  }
-
   .navbar-whatsapp {
     padding: 13px 15px;
-
     font-size: 10px;
   }
-
 }
 
-
-/* =====================================
-   MÓVIL
-===================================== */
-
+/* MÓVIL */
 @media (max-width: 750px) {
-
   .navbar {
     height: 80px;
-
     min-height: 80px;
-
     padding: 0 20px;
-
     flex-wrap: nowrap;
   }
-
-
-  /* LOGO */
 
   .navbar-logo {
     width: auto;
   }
 
-  .navbar-logo img {
-    width: 100px;
-  }
-
-
-  /* OCULTAR WHATSAPP DE DESKTOP */
-
   .navbar-whatsapp {
     display: none;
   }
 
-
-  /* MENÚ */
-
   .navbar-menu {
     display: none;
-
     position: absolute;
-
     top: 80px;
-
     left: 0;
-
     width: 100%;
-
     padding: 15px 20px 25px;
-
     box-sizing: border-box;
-
     background: #f7edda;
-
-    border-top:
-      1px solid rgba(40, 30, 15, 0.1);
-
-    border-bottom:
-      1px solid rgba(40, 30, 15, 0.15);
-
-    box-shadow:
-      0 8px 20px rgba(40, 30, 15, 0.08);
-
+    border-top: 1px solid rgba(40, 30, 15, 0.1);
+    border-bottom: 1px solid rgba(40, 30, 15, 0.15);
+    box-shadow: 0 8px 20px rgba(40, 30, 15, 0.08);
     flex-direction: column;
-
     align-items: stretch;
-
     justify-content: flex-start;
-
     gap: 0;
   }
-
-
-  /* MENÚ ABIERTO */
 
   .navbar-menu.navbar-menu-open {
     display: flex;
   }
 
-
-  /* ENLACES */
-
   .navbar-menu a {
     width: 100%;
-
     padding: 15px 5px;
-
     box-sizing: border-box;
-
     font-size: 13px;
-
-    border-bottom:
-      1px solid rgba(40, 30, 15, 0.1);
+    border-bottom: 1px solid rgba(40, 30, 15, 0.1);
   }
-
-
-  /* WHATSAPP MÓVIL */
 
   .navbar-whatsapp-mobile {
     display: block;
-
     width: 100%;
-
     margin-top: 15px;
-
     padding: 14px;
-
-    border: none;
-
-    border-radius: 7px;
-
-    background: #3d6918;
-
-    color: white;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 12px;
-
-    font-weight: 700;
-
-    cursor: pointer;
   }
-
-  .navbar-whatsapp-mobile:hover {
-    background: #2d5010;
-  }
-
-
-  /* MOSTRAR HAMBURGUESA */
 
   .navbar-toggle {
     display: flex;
   }
-
 }
 
-
-/* =====================================
-   MÓVILES PEQUEÑOS
-===================================== */
-
+/* MÓVILES PEQUEÑOS */
 @media (max-width: 400px) {
-
   .navbar {
     padding: 0 15px;
   }
@@ -393,8 +229,6 @@
 
   .navbar-toggle {
     width: 40px;
-
     height: 40px;
   }
-
 }
