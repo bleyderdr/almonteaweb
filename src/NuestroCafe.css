@@ -1,6 +1,6 @@
-/* =========================================
+/* =========================================================
    NUESTRO CAFÉ
-========================================= */
+========================================================= */
 
 .nuestro-cafe {
   min-height: 100vh;
@@ -9,19 +9,17 @@
 }
 
 
-/* =========================================
-   BOTONES WHATSAPP
-========================================= */
+/* =========================================================
+   BOTÓN WHATSAPP
+========================================================= */
 
 .whatsapp-button {
   border: none;
 
   background: #3d6918;
-
   color: white;
 
   font-family: Arial, sans-serif;
-
   font-weight: 700;
 
   cursor: pointer;
@@ -29,37 +27,33 @@
   border-radius: 7px;
 
   transition:
-    background 0.25s,
-    transform 0.25s;
+    background 0.25s ease,
+    transform 0.25s ease;
 }
-
 
 .whatsapp-button:hover {
   background: #2d5010;
-
   transform: translateY(-2px);
 }
 
-
-.navbar-whatsapp {
-  padding: 15px 20px;
-
-  font-size: 12px;
-
-  white-space: nowrap;
-}
-
-
 .whatsapp-button span {
   margin-left: 8px;
-
   font-size: 15px;
 }
 
+.producto-whatsapp {
+  padding: 17px 28px;
 
-/* =========================================
+  font-size: 14px;
+
+  box-shadow:
+    0 5px 12px rgba(35, 65, 15, 0.15);
+}
+
+
+/* =========================================================
    SECCIÓN PRODUCTO
-========================================= */
+========================================================= */
 
 .cafe-producto {
   position: relative;
@@ -73,25 +67,23 @@
   background:
     radial-gradient(
       circle at 80% 40%,
-      rgba(255,255,255,0.25),
+      rgba(255, 255, 255, 0.25),
       transparent 35%
     ),
     #f5ead4;
 }
 
 
-/* =========================================
+/* =========================================================
    TÍTULO
-========================================= */
+========================================================= */
 
 .cafe-titulo {
-  text-align: center;
-
   position: relative;
-
   z-index: 2;
-}
 
+  text-align: center;
+}
 
 .cafe-titulo h1 {
   margin: 0;
@@ -99,18 +91,15 @@
   font-family: Georgia, "Times New Roman", serif;
 
   font-size: 58px;
-
   font-weight: 700;
 
   color: #17140e;
 }
 
-
 .decoracion {
   display: flex;
 
   justify-content: center;
-
   align-items: center;
 
   gap: 15px;
@@ -118,15 +107,12 @@
   margin-top: 12px;
 }
 
-
 .decoracion span {
   width: 140px;
-
   height: 2px;
 
   background: #62513b;
 }
-
 
 .decoracion b {
   font-size: 25px;
@@ -135,12 +121,15 @@
 }
 
 
-/* =========================================
-   CONTENIDO
-========================================= */
+/* =========================================================
+   CONTENIDO DEL PRODUCTO
+========================================================= */
 
 .producto-contenido {
+  width: 100%;
   max-width: 1250px;
+
+  min-height: 680px;
 
   margin: 40px auto 0;
 
@@ -149,18 +138,15 @@
   grid-template-columns: 45% 55%;
 
   align-items: center;
-
-  min-height: 680px;
 }
 
 
-/* =========================================
+/* =========================================================
    INFORMACIÓN DEL PRODUCTO
-========================================= */
+========================================================= */
 
 .producto-info {
   position: relative;
-
   z-index: 3;
 
   padding-left: 15px;
@@ -168,47 +154,41 @@
   margin-top: -10px;
 }
 
-
 .producto-info h2 {
+  margin: 0 0 28px;
+
   font-family: Georgia, "Times New Roman", serif;
 
   font-size: 49px;
-
   line-height: 1.15;
-
-  margin: 0 0 28px;
 
   color: #17140e;
 }
 
-
 .producto-descripcion {
   max-width: 470px;
+
+  margin: 0 0 30px;
 
   font-family: Arial, sans-serif;
 
   font-size: 21px;
-
   line-height: 1.65;
 
   color: #3f3a31;
-
-  margin-bottom: 30px;
 }
 
 
-/* =========================================
+/* =========================================================
    CARACTERÍSTICAS
-========================================= */
+========================================================= */
 
 .caracteristicas {
   list-style: none;
 
   padding: 0;
-
   margin: 0 0 40px;
 }
-
 
 .caracteristicas li {
   display: flex;
@@ -217,60 +197,44 @@
 
   gap: 13px;
 
+  margin-bottom: 13px;
+
   font-family: Arial, sans-serif;
 
   font-size: 19px;
-
   line-height: 1.5;
-
-  margin-bottom: 13px;
 
   color: #302c24;
 }
 
-
 .caracteristicas li span {
+  flex-shrink: 0;
+
   color: #24500f;
 
   font-size: 23px;
-
   font-weight: bold;
 
   line-height: 1;
 }
 
 
-/* =========================================
-   BOTÓN PRODUCTO
-========================================= */
-
-.producto-whatsapp {
-  padding: 17px 28px;
-
-  font-size: 14px;
-
-  box-shadow: 0 5px 12px rgba(35, 65, 15, 0.15);
-}
-
-
-/* =========================================
+/* =========================================================
    IMAGEN DEL PRODUCTO
-========================================= */
+========================================================= */
 
 .producto-imagen {
+  position: relative;
+
   height: 480px;
 
   display: flex;
 
   align-items: center;
-
   justify-content: center;
-
-  position: relative;
 
   padding-bottom: 190px;
 }
-
 
 .producto-imagen::after {
   content: "";
@@ -280,8 +244,8 @@
   width: 500px;
   height: 160px;
 
-  bottom: 30px;
   right: 20px;
+  bottom: 30px;
 
   background: rgba(90, 57, 24, 0.18);
 
@@ -290,9 +254,7 @@
   filter: blur(25px);
 
   z-index: 0;
-  
 }
-
 
 .producto-imagen img {
   position: relative;
@@ -300,7 +262,6 @@
   z-index: 2;
 
   width: 480px;
-
   max-width: 115%;
 
   height: auto;
@@ -308,25 +269,17 @@
   object-fit: contain;
 
   transform: translateY(35px);
-  
+
   border-radius: 20px;
 }
 
 
-/* =========================================
+/* =========================================================
    VALORES
-========================================= */
+========================================================= */
 
 .valoresNC {
   min-height: 330px;
-
-  background:
-    linear-gradient(
-      rgba(15, 40, 8, 0.96),
-      rgba(15, 40, 8, 0.96)
-    );
-
-  color: white;
 
   display: grid;
 
@@ -336,9 +289,10 @@
 
   padding: 50px 100px;
 
-  box-sizing: border-box;
-}
+  background: #0f2808;
 
+  color: white;
+}
 
 .valor {
   min-height: 190px;
@@ -348,101 +302,98 @@
   flex-direction: column;
 
   align-items: center;
-
   justify-content: center;
-
-  text-align: center;
 
   padding: 20px 70px;
 
-  border-right: 1px solid rgba(255,255,255,0.12);
-}
+  text-align: center;
 
+  border-right:
+    1px solid rgba(255, 255, 255, 0.12);
+}
 
 .valor:last-child {
   border-right: none;
 }
 
-
 .valor-icono {
   width: 70px;
   height: 70px;
 
-  border: 2px solid #d9bd80;
-
-  border-radius: 50%;
-
   display: flex;
 
   align-items: center;
-
   justify-content: center;
+
+  margin-bottom: 18px;
+
+  border: 2px solid #d9bd80;
+  border-radius: 50%;
 
   color: #d9bd80;
 
   font-size: 32px;
-
-  margin-bottom: 18px;
 }
 
-
 .valor h3 {
+  margin: 0 0 14px;
+
   font-family: Georgia, "Times New Roman", serif;
 
   font-size: 25px;
 
-  margin: 0 0 14px;
-
   color: white;
 }
-
 
 .valor p {
   max-width: 230px;
 
+  margin: 0;
+
   font-family: Arial, sans-serif;
 
   font-size: 16px;
-
   line-height: 1.6;
 
   color: #eee;
-
-  margin: 0;
 }
 
 
-/* =========================================
-   RESPONSIVE
-========================================= */
+/* =========================================================
+   TABLET
+========================================================= */
 
 @media (max-width: 1000px) {
 
-  .nuestro-cafe .navbar {
-    padding: 0 25px;
-  }
-
-  .navbar-menu {
-    gap: 18px;
-  }
-
-  .navbar-menu a {
-    font-size: 11px;
+  .cafe-producto {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .producto-contenido {
     grid-template-columns: 1fr 1fr;
+
+    gap: 20px;
   }
 
   .producto-info h2 {
     font-size: 40px;
   }
 
-  .producto-imagen img {
-    width: 550px;
+  .producto-descripcion {
+    font-size: 18px;
   }
 
-  .valores {
+  .caracteristicas li {
+    font-size: 17px;
+  }
+
+  .producto-imagen img {
+    width: 100%;
+    max-width: 550px;
+  }
+
+  .valoresNC {
     padding: 40px 30px;
   }
 
@@ -452,115 +403,251 @@
 }
 
 
+/* =========================================================
+   MÓVIL
+========================================================= */
+
 @media (max-width: 750px) {
 
-  .nuestro-cafe .navbar {
-    height: auto;
-
-    min-height: 90px;
-
-    padding: 15px 20px;
-
-    flex-wrap: wrap;
-  }
-
-  .navbar-logo {
-    width: auto;
-  }
-
-  .navbar-menu {
-    order: 3;
-
-    width: 100%;
-
-    overflow-x: auto;
-
-    justify-content: flex-start;
-
-    padding-bottom: 8px;
-  }
-
-  .navbar-whatsapp {
-    margin-left: auto;
-  }
-
+  /* =====================================================
+     SECCIÓN PRINCIPAL
+  ===================================================== */
 
   .cafe-producto {
-    padding: 45px 25px 0;
+    min-height: auto;
+
+    padding: 45px 20px 0;
   }
 
+
+  /* =====================================================
+     TÍTULO
+  ===================================================== */
 
   .cafe-titulo h1 {
     font-size: 42px;
   }
 
+  .decoracion {
+    gap: 10px;
+
+    margin-top: 10px;
+  }
+
+  .decoracion span {
+    width: 75px;
+  }
+
+  .decoracion b {
+    font-size: 21px;
+  }
+
+
+  /* =====================================================
+     CONTENIDO
+  ===================================================== */
 
   .producto-contenido {
     grid-template-columns: 1fr;
 
+    min-height: auto;
+
     margin-top: 20px;
+
+    gap: 10px;
   }
 
 
+  /* =====================================================
+     INFORMACIÓN
+  ===================================================== */
+
   .producto-info {
-    padding: 20px 0;
+    padding: 25px 5px 0;
+
+    margin: 0;
 
     text-align: center;
   }
 
-
   .producto-info h2 {
-    font-size: 38px;
-  }
+    margin-bottom: 20px;
 
+    font-size: 37px;
+
+    line-height: 1.1;
+  }
 
   .producto-descripcion {
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 500px;
+
+    margin: 0 auto 25px;
+
+    font-size: 15px;
+    line-height: 1.6;
   }
 
 
+  /* =====================================================
+     CARACTERÍSTICAS
+  ===================================================== */
+
   .caracteristicas {
-    display: inline-block;
+    width: fit-content;
+
+    margin: 0 auto 30px;
 
     text-align: left;
   }
 
+  .caracteristicas li {
+    gap: 10px;
 
-  .producto-imagen {
-    height: auto;
+    margin-bottom: 11px;
 
-    min-height: 450px;
+    font-size: 15px;
   }
 
+  .caracteristicas li span {
+    font-size: 19px;
+  }
+
+
+  /* =====================================================
+     BOTÓN
+  ===================================================== */
+
+  .producto-whatsapp {
+    width: 100%;
+    max-width: 300px;
+
+    padding: 14px 20px;
+
+    font-size: 12px;
+  }
+
+
+  /* =====================================================
+     IMAGEN
+  ===================================================== */
+
+  .producto-imagen {
+    width: 100%;
+
+    height: auto;
+
+    min-height: 390px;
+
+    padding: 20px 0 50px;
+  }
 
   .producto-imagen img {
     width: 100%;
 
-    max-width: 600px;
+    max-width: 500px;
 
     transform: none;
   }
 
+  .producto-imagen::after {
+    width: 75%;
+    height: 90px;
 
-  .valores {
+    right: 12.5%;
+    bottom: 35px;
+
+    filter: blur(20px);
+  }
+
+
+  /* =====================================================
+     VALORES
+  ===================================================== */
+
+  .valoresNC {
+    min-height: auto;
+
     grid-template-columns: 1fr;
 
-    padding: 30px 20px;
+    padding: 15px 20px;
   }
-
 
   .valor {
+    min-height: auto;
+
+    padding: 35px 15px;
+
     border-right: none;
 
-    border-bottom: 1px solid rgba(255,255,255,0.12);
-
-    padding: 35px 20px;
+    border-bottom:
+      1px solid rgba(255, 255, 255, 0.12);
   }
-
 
   .valor:last-child {
     border-bottom: none;
   }
 
+  .valor-icono {
+    width: 60px;
+    height: 60px;
+
+    margin-bottom: 14px;
+
+    font-size: 27px;
+  }
+
+  .valor h3 {
+    font-size: 23px;
+  }
+
+  .valor p {
+    font-size: 14px;
+  }
+}
+
+
+/* =========================================================
+   MÓVILES PEQUEÑOS
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .cafe-producto {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .cafe-titulo h1 {
+    font-size: 36px;
+  }
+
+  .decoracion span {
+    width: 55px;
+  }
+
+  .producto-info h2 {
+    font-size: 32px;
+  }
+
+  .producto-descripcion {
+    font-size: 14px;
+  }
+
+  .caracteristicas li {
+    font-size: 14px;
+  }
+
+  .producto-imagen {
+    min-height: 340px;
+
+    padding-bottom: 30px;
+  }
+
+  .producto-whatsapp {
+    max-width: none;
+  }
+
+  .valor {
+    padding: 30px 10px;
+  }
 }

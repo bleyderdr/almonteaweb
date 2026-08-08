@@ -4,7 +4,7 @@ import "../NuestroCafe.css";
 function NuestroCafe() {
 
   const pedirWhatsApp = () => {
-    const telefono = "573001234567";
+    const telefono = "573148272305";
 
     const mensaje = encodeURIComponent(
       "Hola, estoy interesado en comprar el Café Tradicional Almontea de 500 g."
