@@ -1,0 +1,245 @@
+/* =====================================
+   NAVBAR ALMONTEA
+===================================== */
+
+.navbar {
+  width: 100%;
+  height: 115px;
+
+  background: #f7edda;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 55px;
+
+  box-sizing: border-box;
+
+  border-bottom: 1px solid rgba(40, 30, 15, 0.15);
+
+  position: relative;
+
+  z-index: 1000;
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.navbar-logo {
+  width: 190px;
+
+  display: flex;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+
+.navbar-logo img {
+  width: 125px;
+
+  height: auto;
+
+  display: block;
+}
+
+
+/* =====================================
+   MENÚ
+===================================== */
+
+.navbar-menu {
+
+  flex: 1;
+
+  display: flex;
+
+  justify-content: right;
+
+  align-items: center;
+
+  gap: 38px;
+
+  padding-right: 35px;
+}
+
+
+.navbar-menu a {
+
+  text-decoration: none;
+
+  color: #17140e;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  white-space: nowrap;
+
+  transition: color 0.25s ease;
+}
+
+
+.navbar-menu a:hover {
+
+  color: #3d6918;
+}
+
+
+/* =====================================
+   BOTÓN WHATSAPP
+===================================== */
+
+.navbar-whatsapp {
+
+  border: none;
+
+  background: #3d6918;
+
+  color: white;
+
+  padding: 15px 20px;
+
+  border-radius: 7px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 12px;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+
+.navbar-whatsapp:hover {
+
+  background: #2d5010;
+
+  transform: translateY(-2px);
+}
+
+
+.navbar-whatsapp span {
+
+  margin-left: 8px;
+
+  font-size: 15px;
+}
+
+
+/* =====================================
+   TABLETS
+===================================== */
+
+@media (max-width: 1000px) {
+
+  .navbar {
+
+    padding: 0 25px;
+  }
+
+
+  .navbar-menu {
+
+    gap: 20px;
+  }
+
+
+  .navbar-menu a {
+
+    font-size: 11px;
+  }
+
+
+  .navbar-logo {
+
+    width: 150px;
+  }
+
+
+  .navbar-logo img {
+
+    width: 110px;
+  }
+
+
+  .navbar-whatsapp {
+
+    padding: 13px 15px;
+
+    font-size: 10px;
+  }
+}
+
+
+/* =====================================
+   MÓVIL
+===================================== */
+
+@media (max-width: 750px) {
+
+  .navbar {
+
+    height: auto;
+
+    min-height: 85px;
+
+    padding: 15px 20px;
+
+    flex-wrap: wrap;
+  }
+
+
+  .navbar-logo {
+
+    width: auto;
+  }
+
+
+  .navbar-logo img {
+
+    width: 105px;
+  }
+
+
+  .navbar-whatsapp {
+
+    margin-left: auto;
+  }
+
+
+  .navbar-menu {
+
+    order: 3;
+
+    width: 100%;
+
+    justify-content: flex-start;
+
+    gap: 25px;
+
+    overflow-x: auto;
+
+    padding-top: 15px;
+
+    padding-bottom: 5px;
+  }
+
+
+  .navbar-menu a {
+
+    font-size: 11px;
+  }
+
+}

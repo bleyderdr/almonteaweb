@@ -1,0 +1,610 @@
+/* =========================================
+   NOSOTROS
+========================================= */
+
+.nosotros-page {
+  width: 100%;
+  background-color: #f5ead6;
+  color: #211b12;
+}
+
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.nosotros-header {
+  text-align: center;
+
+  padding: 75px 20px 60px;
+
+  background-color: #f5ead6;
+}
+
+.nosotros-header h1 {
+  margin: 0 0 20px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 56px;
+
+  font-weight: 700;
+
+  color: #17140f;
+}
+
+
+/* =========================================
+   DECORACIÓN
+========================================= */
+
+.decoracion-cafe {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 15px;
+
+  margin: 0 auto;
+}
+
+.decoracion-cafe span:first-child,
+.decoracion-cafe span:last-child {
+  width: 130px;
+
+  height: 2px;
+
+  background-color: #4d493d;
+}
+
+.grano {
+  font-size: 27px;
+}
+
+.nosotros-header p {
+  max-width: 650px;
+
+  margin: 22px auto 0;
+
+  font-size: 19px;
+
+  line-height: 1.7;
+
+  color: #514a3f;
+}
+
+
+/* =========================================
+   SECCIONES GENERALES
+========================================= */
+
+.nosotros-seccion {
+  width: 100%;
+
+  box-sizing: border-box;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 70px;
+}
+
+
+/* =========================================
+   HISTORIA
+========================================= */
+
+.historia {
+  min-height: 550px;
+
+  background-color: #eee0c7;
+}
+
+.historia-imagen {
+  width: 50%;
+
+  height: 550px;
+
+  overflow: hidden;
+}
+
+.historia-imagen img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.historia-texto {
+  width: 50%;
+
+  padding: 70px 80px 70px 0;
+
+  box-sizing: border-box;
+}
+
+.seccion-etiqueta {
+  display: block;
+
+  margin-bottom: 12px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  color: #456b20;
+}
+
+.historia-texto h2,
+.seccion-contenido h2 {
+  margin: 0 0 20px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 42px;
+
+  line-height: 1.2;
+
+  color: #211b12;
+}
+
+.linea-verde {
+  width: 70px;
+
+  height: 4px;
+
+  margin-bottom: 25px;
+
+  background-color: #3c611c;
+}
+
+.historia-texto p {
+  margin: 0 0 18px;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #554e42;
+}
+
+
+/* =========================================
+   MISIÓN
+========================================= */
+
+.mision {
+  padding: 100px max(30px, calc((100% - 1100px) / 2));
+
+  background-color: #f8efdf;
+}
+
+.mision .seccion-icono {
+  margin-left: 20px;
+}
+
+
+/* =========================================
+   VISIÓN
+========================================= */
+
+.vision {
+  padding: 100px max(30px, calc((100% - 1100px) / 2));
+
+  background-color: #e8ddc5;
+}
+
+.vision .seccion-icono {
+  margin-right: 20px;
+}
+
+
+/* =========================================
+   ICONOS MISIÓN / VISIÓN
+========================================= */
+
+.seccion-icono {
+  width: 130px;
+
+  height: 130px;
+
+  min-width: 130px;
+
+  border-radius: 50%;
+
+  background-color: #234516;
+
+  color: #f5ead6;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 52px;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.seccion-contenido {
+  max-width: 850px;
+}
+
+.seccion-contenido p {
+  margin: 0 0 18px;
+
+  font-size: 17px;
+
+  line-height: 1.8;
+
+  color: #514a3f;
+}
+
+.seccion-contenido .linea-verde {
+  margin-bottom: 28px;
+}
+
+
+/* =========================================
+   VALORES
+========================================= */
+
+/*
+   Fondo CLARO y letras OSCURAS
+*/
+
+.valores {
+  width: 100%;
+  padding: 90px 40px;
+  box-sizing: border-box;
+  background-color: #f5ead6;
+  color: #211b12;
+}
+
+
+/* =========================================
+   ENCABEZADO DE VALORES
+========================================= */
+
+.valores-header {
+  text-align: center;
+
+  margin-bottom: 60px;
+}
+
+.valores-header .seccion-etiqueta {
+  color: #456b20;
+}
+
+.valores-header h2 {
+  margin: 0 0 20px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 44px;
+
+  color: #211b12;
+}
+
+.valores-header .decoracion-cafe span:first-child,
+.valores-header .decoracion-cafe span:last-child {
+  background-color: #4d493d;
+}
+
+.valores-header p {
+  max-width: 650px;
+
+  margin: 20px auto 0;
+
+  font-size: 18px;
+
+  line-height: 1.6;
+
+  color: #514a3f;
+}
+
+
+/* =========================================
+   GRID DE VALORES
+========================================= */
+
+.valores-grid {
+  max-width: 1150px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 0;
+}
+
+
+/* =========================================
+   TARJETAS DE VALORES
+========================================= */
+
+.valor-card {
+  padding: 30px;
+
+  text-align: center;
+
+  border-right: 1px solid rgba(33, 27, 18, 0.15);
+
+  box-sizing: border-box;
+}
+
+.valor-card:last-child {
+  border-right: none;
+}
+
+
+/* =========================================
+   ICONOS DE VALORES
+========================================= */
+
+.valor-icono {
+  width: 70px;
+
+  height: 70px;
+
+  margin: 0 auto 20px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background-color: #234516;
+
+  font-size: 30px;
+
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+/* =========================================
+   TÍTULOS DE VALORES
+========================================= */
+
+.valor-card h3 {
+  margin: 0 0 15px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 25px;
+
+  color: #211b12;
+}
+
+
+/* =========================================
+   TEXTO DE VALORES
+========================================= */
+
+.valor-card p {
+  margin: 0;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: #514a3f;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  /* HISTORIA */
+
+  .historia {
+    flex-direction: column;
+
+    gap: 0;
+  }
+
+  .historia-imagen {
+    width: 100%;
+
+    height: 400px;
+  }
+
+  .historia-texto {
+    width: 100%;
+
+    padding: 60px 40px;
+  }
+
+
+  /* MISIÓN / VISIÓN */
+
+  .mision,
+  .vision {
+    padding: 75px 40px;
+
+    gap: 40px;
+  }
+
+
+  /* VALORES */
+
+  .valores-grid {
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 0;
+  }
+
+  .valor-card {
+    border-right: none;
+
+    border-bottom: 1px solid rgba(33, 27, 18, 0.15);
+
+    padding: 35px 25px;
+  }
+
+  .valor-card:nth-child(odd) {
+    border-right: 1px solid rgba(33, 27, 18, 0.15);
+  }
+
+  .valor-card:nth-child(3),
+  .valor-card:nth-child(4) {
+    border-bottom: none;
+  }
+
+}
+
+
+/* =========================================
+   MÓVIL
+========================================= */
+
+@media (max-width: 600px) {
+
+  /* ENCABEZADO */
+
+  .nosotros-header {
+    padding: 55px 20px 45px;
+  }
+
+  .nosotros-header h1 {
+    font-size: 42px;
+  }
+
+  .nosotros-header p {
+    font-size: 16px;
+  }
+
+  .decoracion-cafe span:first-child,
+  .decoracion-cafe span:last-child {
+    width: 70px;
+  }
+
+
+  /* HISTORIA */
+
+  .historia-imagen {
+    height: 300px;
+  }
+
+  .historia-texto {
+    padding: 50px 25px;
+  }
+
+  .historia-texto h2 {
+    font-size: 34px;
+  }
+
+  .historia-texto p {
+    font-size: 16px;
+  }
+
+
+  /* MISIÓN */
+
+  .mision {
+    flex-direction: column;
+
+    padding: 70px 25px;
+
+    text-align: center;
+  }
+
+  .mision .seccion-icono {
+    margin: 0;
+  }
+
+  .mision .linea-verde {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* VISIÓN */
+
+  .vision {
+    flex-direction: column-reverse;
+
+    padding: 70px 25px;
+
+    text-align: center;
+  }
+
+  .vision .seccion-icono {
+    margin: 0;
+  }
+
+  .vision .linea-verde {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  /* ICONOS */
+
+  .seccion-icono {
+    width: 110px;
+
+    height: 110px;
+
+    min-width: 110px;
+
+    font-size: 44px;
+  }
+
+
+  /* VALORES */
+
+  .valores {
+    padding: 65px 20px;
+  }
+
+  .valores-header {
+    margin-bottom: 40px;
+  }
+
+  .valores-header h2 {
+    font-size: 34px;
+  }
+
+  .valores-header p {
+    font-size: 16px;
+  }
+
+  .valores-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .valor-card {
+    padding: 30px 20px;
+
+    border-right: none !important;
+
+    border-bottom: 1px solid rgba(33, 27, 18, 0.15);
+  }
+
+  .valor-card:last-child {
+    border-bottom: none;
+  }
+
+  .valor-card h3 {
+    font-size: 23px;
+  }
+
+}

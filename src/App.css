@@ -1,38 +1,1113 @@
-.App {
-  text-align: center;
+/* =========================================================
+   GENERAL
+========================================================= */
+
+* {
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  scroll-behavior: smooth;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  margin: 0;
+
+  background: #eee1c9;
+
+  color: #30251a;
+
+  font-family: Arial, sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a {
+  text-decoration: none;
+}
+
+.home {
+  width: 100%;
+
+  overflow: hidden;
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+  position: relative;
+
+  min-height: 600px;
+
   display: flex;
-  flex-direction: column;
+
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+  /* background-image: url("/images/hero-almontea.jpg"); */
+
+  background-size: cover;
+
+  background-position: center;
+
+  overflow: hidden;
+}
+
+
+/* OSCURECER IMAGEN */
+
+.hero-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.72) 0%,
+      rgba(0, 0, 0, 0.48) 45%,
+      rgba(0, 0, 0, 0.12) 100%
+    );
+}
+
+
+/* CONTENIDO */
+
+.hero-content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 600px;
+
+  margin-left: 7%;
+
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.hero-small {
+  display: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.hero-content h1 {
+  margin: 0 0 18px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 48px;
+
+  line-height: 1.05;
+
+  font-weight: 500;
+}
+
+.hero-content h1 span {
+  color: #82a94b;
+}
+
+.hero-content h2 {
+  margin: 0 0 22px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 24px;
+
+  font-weight: 500;
+}
+
+.hero-description {
+  max-width: 400px;
+
+  margin-bottom: 28px;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: #f1eee7;
+}
+
+
+/* =========================================================
+   BOTONES HERO
+========================================================= */
+
+.hero-buttons {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+}
+
+.btn-whatsapp {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  padding: 13px 20px;
+
+  border-radius: 7px;
+
+  background: #4c792b;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.btn-whatsapp:hover {
+  background: #365a1e;
+
+  transform: translateY(-2px);
+}
+
+.btn-whatsapp span {
+  font-size: 17px;
+}
+
+.btn-secondary {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 12px 20px;
+
+  border: 1px solid white;
+
+  border-radius: 6px;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.btn-secondary:hover {
+  background: white;
+
+  color: #30251a;
+}
+
+
+/* =========================================================
+   CARACTERÍSTICAS
+========================================================= */
+
+.features {
+  display: grid;
+
+  grid-template-columns:
+    repeat(4, 1fr);
+
+  background: #eee1c9;
+
+  padding: 28px 6%;
+}
+
+.feature {
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 15px 25px;
+
+  border-right:
+    1px solid rgba(80, 65, 40, 0.15);
+}
+
+.feature:last-child {
+  border-right: none;
+}
+
+.feature-icon {
+  flex-shrink: 0;
+
+  width: 45px;
+
+  font-size: 28px;
+
+  text-align: center;
+}
+
+.feature h3 {
+  margin: 0 0 8px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 14px;
+
+  color: #30251a;
+}
+
+.feature p {
+  margin: 0;
+
+  font-size: 11px;
+
+  line-height: 1.5;
+
+  color: #625746;
+}
+
+
+/* =========================================================
+   NUESTRA HISTORIA
+========================================================= */
+
+.history-section1 {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 360px;
+
+  background: #ddd1badd;
+}
+
+
+/* IMAGEN */
+
+.history-image {
+  width: 100%;
+
+  height: 100%;
+
+  overflow: hidden;
+}
+
+.history-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+}
+
+
+/* CONTENIDO */
+
+.history-content {
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  padding: 55px 9%;
+}
+
+.history-content h2 {
+  margin: 0 0 20px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 42px;
+
+  font-weight: 500;
+
+  color: #30251a;
+}
+
+.history-content p {
+  max-width: 570px;
+
+  margin: 0 0 28px;
+
+  font-size: 16px;
+
+  line-height: 1.65;
+
+  color: #51483c;
+}
+
+.history-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 14px 28px;
+
+  border-radius: 8px;
+
+  background: #4c792b;
+
+  color: white;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.history-button:hover {
+  background: #365a1e;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   PRODUCTOS
+========================================================= */
+
+.product-section1 {
+  padding: 80px 6%;
+
+  background: #eee1c9;
+}
+
+
+/* =========================================================
+   ENCABEZADO PRODUCTOS
+========================================================= */
+
+.product-section-header {
+  max-width: 700px;
+
+  margin: 0 auto 55px;
+
+  text-align: center;
+}
+
+.section-label {
+  margin: 0 0 12px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  letter-spacing: 3px;
+
+  color: #527d2d;
+}
+
+.product-section-header h2 {
+  margin: 0 0 20px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 46px;
+
+  line-height: 1.05;
+
+  font-weight: 500;
+
+  color: #30251a;
+}
+
+.product-section-header h2 span {
+  color: #527d2d;
+}
+
+.product-section-header .product-description {
+  max-width: 620px;
+
+  margin: 0 auto;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: #625746;
+}
+
+
+/* =========================================================
+   GRID DE PRODUCTOS
+   DOS PRODUCTOS UNO AL LADO DEL OTRO
+========================================================= */
+
+.productos-grid {
+  max-width: 1050px;
+
+  margin: 0 auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 35px;
+}
+
+
+/* =========================================================
+   TARJETA DE PRODUCTO
+========================================================= */
+
+.product-card {
+  background: #fdf8ee;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 6px 18px rgba(0, 0, 0, 0.08);
+
+  display: flex;
+
+  flex-direction: column;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+
+  box-shadow:
+    0 12px 28px rgba(0, 0, 0, 0.13);
+}
+
+
+/* =========================================================
+   IMAGEN DEL PRODUCTO
+========================================================= */
+
+.product-image {
+  width: 100%;
+
+  height: 380px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  background: #eee1c9;
+
+  overflow: hidden;
+}
+
+.product-image img {
+  display: block;
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: contain;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  transition:
+    transform 0.4s ease;
+}
+
+.product-card:hover .product-image img {
+  transform: scale(1.03);
+}
+
+
+/* =========================================================
+   INFORMACIÓN DEL PRODUCTO
+========================================================= */
+
+.product-info {
+  padding: 28px 28px 32px;
+
+  text-align: center;
+}
+
+.product-info h3 {
+  margin: 0 0 8px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 27px;
+
+  color: #30251a;
+}
+
+
+/* PESO */
+
+.product-details {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 10px;
+
+  margin-bottom: 14px;
+
+  font-size: 13px;
+
+  color: #4e463b;
+}
+
+
+/* =========================================================
+   PRECIO
+========================================================= */
+
+.product-price {
+  margin-bottom: 24px;
+
+  font-size: 28px;
+
+  font-weight: bold;
+
+  color: #263d1b;
+}
+
+
+/* =========================================================
+   BOTONES DEL PRODUCTO
+========================================================= */
+
+.product-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 12px;
+}
+
+.product-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-width: 135px;
+
+  padding: 13px 18px;
+
+  border-radius: 7px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+  transition:
+    0.3s ease;
+}
+
+
+/* =========================================================
+   BOTÓN SABER MÁS
+========================================================= */
+
+.saber-mas {
+  background: #4c792b;
+
+  color: white;
+}
+
+.saber-mas:hover {
+  background: #365a1e;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   BOTÓN WHATSAPP
+========================================================= */
+
+.whatsapp-button {
+  background: transparent;
+
+  color: #4c792b;
+
+  border: 1px solid #4c792b;
+}
+
+.whatsapp-button:hover {
+  background: #4c792b;
+
+  color: white;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.footer {
+  position: relative;
+
+  overflow: hidden;
+
+  background: #102408;
+
+  color: #f4ead5;
+}
+
+
+/* LÍNEA SUPERIOR */
+
+.footer::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+
+  left: 0;
+
+  width: 100%;
+
+  height: 1px;
+
+  background:
+    rgba(220, 214, 184, 0.35);
+}
+
+
+/* CONTENIDO */
+
+.footer-content {
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 70px 50px 55px;
+
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1fr
+    1.3fr;
+
+  gap: 80px;
+}
+
+
+/* MARCA */
+
+.footer-brand {
+  max-width: 340px;
+
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.footer-logo-icon {
+  width: 70px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 5px;
+
+  font-size: 35px;
+}
+
+.footer-logo h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 39px;
+
+  letter-spacing: 1px;
+
+  line-height: 1;
+
+  color: #f5ead5;
+}
+
+.footer-logo span {
+  margin-top: 7px;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #d8cba9;
+}
+
+.footer-brand p {
+  margin-bottom: 25px;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  color: #e1dac7;
+}
+
+
+/* REDES */
+
+.social-links {
+  display: flex;
+
+  justify-content: center;
+
+  gap: 18px;
+}
+
+.social-links a {
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border: 2px solid #e8dfc8;
+
+  border-radius: 50%;
+
+  font-size: 22px;
+
+  color: #f5ead5;
+
+  transition: 0.3s;
+}
+
+.social-links a:hover {
+  background: #f5ead5;
+
+  color: #102408;
+}
+
+
+/* COLUMNAS */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 17px;
+}
+
+.footer-column h3 {
+  margin: 0 0 12px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 22px;
+
+  color: #f5ead5;
+}
+
+.footer-column a,
+.footer-column span {
+  font-size: 14px;
+
+  color: #e1dac7;
+
+  transition: 0.3s;
+}
+
+.footer-column a:hover {
+  color: #9abf5c;
+
+  transform: translateX(3px);
+}
+
+
+/* COPYRIGHT */
+
+.footer-bottom {
+  min-height: 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  border-top:
+    1px solid rgba(220, 214, 184, 0.3);
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #d4ceb9;
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+  /* CARACTERÍSTICAS */
+
+  .features {
+    grid-template-columns:
+      repeat(2, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+
+  .feature:nth-child(2) {
+    border-right: none;
   }
+
+
+  /* PRODUCTOS */
+
+  .product-section {
+    padding-left: 6%;
+
+    padding-right: 6%;
+  }
+
+
+  .product-grid {
+    gap: 25px;
+  }
+
+
+  .product-image {
+    height: 330px;
+  }
+
+
+  /* FOOTER */
+
+  .footer-content {
+    gap: 40px;
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MÓVIL
+========================================================= */
+
+@media (max-width: 750px) {
+
+  /* =====================================================
+     HERO
+  ===================================================== */
+
+  .hero {
+    min-height: 600px;
+
+    background-position: 65% center;
+  }
+
+  .hero-content {
+    margin: 0;
+
+    padding: 40px 25px;
+
+    max-width: 100%;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-content h2 {
+    font-size: 21px;
+  }
+
+  .hero-description {
+    font-size: 14px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+
+    align-items: flex-start;
+  }
+
+
+  /* =====================================================
+     CARACTERÍSTICAS
+  ===================================================== */
+
+  .features {
+    grid-template-columns: 1fr;
+
+    padding: 20px;
+  }
+
+  .feature {
+    border-right: none;
+
+    border-bottom:
+      1px solid rgba(80, 65, 40, 0.15);
+
+    padding: 20px 10px;
+  }
+
+  .feature:last-child {
+    border-bottom: none;
+  }
+
+
+  /* =====================================================
+     HISTORIA
+  ===================================================== */
+
+  .history-section {
+    grid-template-columns: 1fr;
+  }
+
+  .history-image {
+    height: 300px;
+  }
+
+  .history-content {
+    padding: 45px 25px;
+  }
+
+  .history-content h2 {
+    font-size: 36px;
+  }
+
+  .history-content p {
+    font-size: 15px;
+  }
+
+
+  /* =====================================================
+     PRODUCTOS
+  ===================================================== */
+
+  .product-section {
+    padding: 60px 25px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+
+    gap: 30px;
+
+    max-width: 550px;
+  }
+
+  .product-section-header {
+    margin-bottom: 40px;
+  }
+
+  .product-section-header h2 {
+    font-size: 34px;
+  }
+
+  .product-section-header .product-description {
+    font-size: 14px;
+  }
+
+  .product-image {
+    height: 330px;
+  }
+
+  .product-info {
+    padding: 25px 20px 30px;
+  }
+
+  .product-info h3 {
+    font-size: 25px;
+  }
+
+  .product-price {
+    font-size: 26px;
+  }
+
+
+  /* BOTONES */
+
+  .product-buttons {
+    flex-direction: column;
+
+    width: 100%;
+
+    gap: 10px;
+  }
+
+  .product-button {
+    width: 100%;
+  }
+
+
+  /* =====================================================
+     FOOTER
+  ===================================================== */
+
+  .footer-content {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding: 55px 30px 45px;
+  }
+
+  .footer-brand {
+    max-width: none;
+  }
+
+  .footer-column {
+    align-items: center;
+
+    text-align: center;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 5px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+
+    text-align: center;
+  }
+
 }

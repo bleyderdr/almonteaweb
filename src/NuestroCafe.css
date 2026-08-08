@@ -1,0 +1,566 @@
+/* =========================================
+   NUESTRO CAFÉ
+========================================= */
+
+.nuestro-cafe {
+  min-height: 100vh;
+  background: #f5ead4;
+  color: #17140e;
+}
+
+
+/* =========================================
+   BOTONES WHATSAPP
+========================================= */
+
+.whatsapp-button {
+  border: none;
+
+  background: #3d6918;
+
+  color: white;
+
+  font-family: Arial, sans-serif;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  border-radius: 7px;
+
+  transition:
+    background 0.25s,
+    transform 0.25s;
+}
+
+
+.whatsapp-button:hover {
+  background: #2d5010;
+
+  transform: translateY(-2px);
+}
+
+
+.navbar-whatsapp {
+  padding: 15px 20px;
+
+  font-size: 12px;
+
+  white-space: nowrap;
+}
+
+
+.whatsapp-button span {
+  margin-left: 8px;
+
+  font-size: 15px;
+}
+
+
+/* =========================================
+   SECCIÓN PRODUCTO
+========================================= */
+
+.cafe-producto {
+  position: relative;
+
+  min-height: 900px;
+
+  padding: 65px 75px 0;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at 80% 40%,
+      rgba(255,255,255,0.25),
+      transparent 35%
+    ),
+    #f5ead4;
+}
+
+
+/* =========================================
+   TÍTULO
+========================================= */
+
+.cafe-titulo {
+  text-align: center;
+
+  position: relative;
+
+  z-index: 2;
+}
+
+
+.cafe-titulo h1 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 58px;
+
+  font-weight: 700;
+
+  color: #17140e;
+}
+
+
+.decoracion {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 12px;
+}
+
+
+.decoracion span {
+  width: 140px;
+
+  height: 2px;
+
+  background: #62513b;
+}
+
+
+.decoracion b {
+  font-size: 25px;
+
+  color: #315313;
+}
+
+
+/* =========================================
+   CONTENIDO
+========================================= */
+
+.producto-contenido {
+  max-width: 1250px;
+
+  margin: 40px auto 0;
+
+  display: grid;
+
+  grid-template-columns: 45% 55%;
+
+  align-items: center;
+
+  min-height: 680px;
+}
+
+
+/* =========================================
+   INFORMACIÓN DEL PRODUCTO
+========================================= */
+
+.producto-info {
+  position: relative;
+
+  z-index: 3;
+
+  padding-left: 15px;
+
+  margin-top: -10px;
+}
+
+
+.producto-info h2 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 49px;
+
+  line-height: 1.15;
+
+  margin: 0 0 28px;
+
+  color: #17140e;
+}
+
+
+.producto-descripcion {
+  max-width: 470px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 21px;
+
+  line-height: 1.65;
+
+  color: #3f3a31;
+
+  margin-bottom: 30px;
+}
+
+
+/* =========================================
+   CARACTERÍSTICAS
+========================================= */
+
+.caracteristicas {
+  list-style: none;
+
+  padding: 0;
+
+  margin: 0 0 40px;
+}
+
+
+.caracteristicas li {
+  display: flex;
+
+  align-items: flex-start;
+
+  gap: 13px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 19px;
+
+  line-height: 1.5;
+
+  margin-bottom: 13px;
+
+  color: #302c24;
+}
+
+
+.caracteristicas li span {
+  color: #24500f;
+
+  font-size: 23px;
+
+  font-weight: bold;
+
+  line-height: 1;
+}
+
+
+/* =========================================
+   BOTÓN PRODUCTO
+========================================= */
+
+.producto-whatsapp {
+  padding: 17px 28px;
+
+  font-size: 14px;
+
+  box-shadow: 0 5px 12px rgba(35, 65, 15, 0.15);
+}
+
+
+/* =========================================
+   IMAGEN DEL PRODUCTO
+========================================= */
+
+.producto-imagen {
+  height: 480px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  position: relative;
+
+  padding-bottom: 190px;
+}
+
+
+.producto-imagen::after {
+  content: "";
+
+  position: absolute;
+
+  width: 500px;
+  height: 160px;
+
+  bottom: 30px;
+  right: 20px;
+
+  background: rgba(90, 57, 24, 0.18);
+
+  border-radius: 50%;
+
+  filter: blur(25px);
+
+  z-index: 0;
+  
+}
+
+
+.producto-imagen img {
+  position: relative;
+
+  z-index: 2;
+
+  width: 480px;
+
+  max-width: 115%;
+
+  height: auto;
+
+  object-fit: contain;
+
+  transform: translateY(35px);
+  
+  border-radius: 20px;
+}
+
+
+/* =========================================
+   VALORES
+========================================= */
+
+.valoresNC {
+  min-height: 330px;
+
+  background:
+    linear-gradient(
+      rgba(15, 40, 8, 0.96),
+      rgba(15, 40, 8, 0.96)
+    );
+
+  color: white;
+
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  align-items: center;
+
+  padding: 50px 100px;
+
+  box-sizing: border-box;
+}
+
+
+.valor {
+  min-height: 190px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 20px 70px;
+
+  border-right: 1px solid rgba(255,255,255,0.12);
+}
+
+
+.valor:last-child {
+  border-right: none;
+}
+
+
+.valor-icono {
+  width: 70px;
+  height: 70px;
+
+  border: 2px solid #d9bd80;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  color: #d9bd80;
+
+  font-size: 32px;
+
+  margin-bottom: 18px;
+}
+
+
+.valor h3 {
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 25px;
+
+  margin: 0 0 14px;
+
+  color: white;
+}
+
+
+.valor p {
+  max-width: 230px;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 16px;
+
+  line-height: 1.6;
+
+  color: #eee;
+
+  margin: 0;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .nuestro-cafe .navbar {
+    padding: 0 25px;
+  }
+
+  .navbar-menu {
+    gap: 18px;
+  }
+
+  .navbar-menu a {
+    font-size: 11px;
+  }
+
+  .producto-contenido {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .producto-info h2 {
+    font-size: 40px;
+  }
+
+  .producto-imagen img {
+    width: 550px;
+  }
+
+  .valores {
+    padding: 40px 30px;
+  }
+
+  .valor {
+    padding: 20px 30px;
+  }
+}
+
+
+@media (max-width: 750px) {
+
+  .nuestro-cafe .navbar {
+    height: auto;
+
+    min-height: 90px;
+
+    padding: 15px 20px;
+
+    flex-wrap: wrap;
+  }
+
+  .navbar-logo {
+    width: auto;
+  }
+
+  .navbar-menu {
+    order: 3;
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    justify-content: flex-start;
+
+    padding-bottom: 8px;
+  }
+
+  .navbar-whatsapp {
+    margin-left: auto;
+  }
+
+
+  .cafe-producto {
+    padding: 45px 25px 0;
+  }
+
+
+  .cafe-titulo h1 {
+    font-size: 42px;
+  }
+
+
+  .producto-contenido {
+    grid-template-columns: 1fr;
+
+    margin-top: 20px;
+  }
+
+
+  .producto-info {
+    padding: 20px 0;
+
+    text-align: center;
+  }
+
+
+  .producto-info h2 {
+    font-size: 38px;
+  }
+
+
+  .producto-descripcion {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .caracteristicas {
+    display: inline-block;
+
+    text-align: left;
+  }
+
+
+  .producto-imagen {
+    height: auto;
+
+    min-height: 450px;
+  }
+
+
+  .producto-imagen img {
+    width: 100%;
+
+    max-width: 600px;
+
+    transform: none;
+  }
+
+
+  .valores {
+    grid-template-columns: 1fr;
+
+    padding: 30px 20px;
+  }
+
+
+  .valor {
+    border-right: none;
+
+    border-bottom: 1px solid rgba(255,255,255,0.12);
+
+    padding: 35px 20px;
+  }
+
+
+  .valor:last-child {
+    border-bottom: none;
+  }
+
+}

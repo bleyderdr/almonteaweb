@@ -1,24 +1,54 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
+import Navbar from "./components/Navbar";
+
+
+import Home from "./pages/Home";
+import NuestroCafe from "./pages/NuestroCafe";
+import TipsCafeteros from "./pages/TipsCafeteros.jsx";
+import Nosotros from "./pages/Nosotros.jsx";
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+
+    <BrowserRouter>
+
+      {/* NAVBAR GLOBAL */}
+      <Navbar />
+
+      {/* PÁGINAS */}
+      <Routes>
+
+        <Route
+          path="/"
+          element={<Home />}
+        />
+
+        <Route
+          path="/nuestro-cafe"
+          element={<NuestroCafe />}
+        />
+
+        <Route
+          path="/tips-cafeteros"
+          element={<TipsCafeteros />}
+        />
+
+        <Route
+          path="/nosotros"
+          element={<Nosotros />}
+        />
+
+      </Routes>
+
+    </BrowserRouter>
+
   );
 }
 
