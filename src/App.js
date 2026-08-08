@@ -1,7 +1,7 @@
 import React from "react";
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route
 } from "react-router-dom";
@@ -19,7 +19,7 @@ function App() {
 
   return (
 
-    <BrowserRouter>
+    <HashRouter>
 
       {/* NAVBAR GLOBAL */}
       <Navbar />
@@ -49,7 +49,7 @@ function App() {
 
       </Routes>
 
-    </BrowserRouter>
+    </HashRouter>
 
   );
 }
