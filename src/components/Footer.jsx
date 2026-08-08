@@ -1,3 +1,4 @@
+import { FaInstagram } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../Footer.css";
 
@@ -64,7 +65,7 @@ function Footer() {
               rel="noopener noreferrer"
               aria-label="Instagram"
             >
-              ◎
+              <FaInstagram />
             </a>
 
           </div>
