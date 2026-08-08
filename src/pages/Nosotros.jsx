@@ -4,9 +4,11 @@ import "../Nosotros.css";
 
 function Nosotros() {
   return (
-    <div className="nosotros-page">
+    <>
+      {/* =====================================
+          ENCABEZADO
+      ====================================== */}
 
-      {/* ENCABEZADO */}
       <section className="nosotros-header">
         <h1>Nosotros</h1>
 
@@ -22,16 +24,21 @@ function Nosotros() {
       </section>
 
 
-      {/* 1. NUESTRA HISTORIA */}
+      {/* =====================================
+          NUESTRA HISTORIA
+      ====================================== */}
+
       <section className="nosotros-seccion historia">
+
         <div className="historia-imagen">
           <img
-            src="/images/historia-almontea.jpg"
+            src={`${process.env.PUBLIC_URL}/images/historia-almontea.jpg`}
             alt="Caficultores de Almontea"
           />
         </div>
 
         <div className="historia-texto">
+
           <h2>Nuestra historia</h2>
 
           <p>
@@ -49,17 +56,24 @@ function Nosotros() {
             Por eso seleccionamos cuidadosamente nuestro café para ofrecer
             una experiencia auténtica, desde el productor hasta tu taza.
           </p>
+
         </div>
+
       </section>
 
 
-      {/* 2. NUESTRA MISIÓN */}
+      {/* =====================================
+          NUESTRA MISIÓN
+      ====================================== */}
+
       <section className="nosotros-seccion mision">
+
         <div className="seccion-icono">
           ☕
         </div>
 
         <div className="seccion-contenido">
+
           <h2>Nuestra misión</h2>
 
           <p>
@@ -72,13 +86,20 @@ function Nosotros() {
             Buscamos conectar a las personas con el café colombiano,
             valorando el trabajo de quienes hacen posible cada taza.
           </p>
+
         </div>
+
       </section>
 
 
-      {/* 3. NUESTRA VISIÓN */}
+      {/* =====================================
+          NUESTRA VISIÓN
+      ====================================== */}
+
       <section className="nosotros-seccion vision">
+
         <div className="seccion-contenido">
+
           <h2>Nuestra visión</h2>
 
           <p>
@@ -91,18 +112,24 @@ function Nosotros() {
             Queremos que Almontea sea sinónimo de café colombiano
             auténtico, acercando el campo y sus sabores a cada hogar.
           </p>
+
         </div>
 
         <div className="seccion-icono">
           🌱
         </div>
+
       </section>
 
 
-      {/* 4. VALORES */}
+      {/* =====================================
+          VALORES
+      ====================================== */}
+
       <section className="valores">
 
         <div className="valores-header">
+
           <h2>Valores de Almontea</h2>
 
           <div className="decoracion-cafe">
@@ -112,16 +139,20 @@ function Nosotros() {
           </div>
 
           <p>
-            Lo que representa nuestra marca y nuestra manera de hacer las
-            cosas.
+            Lo que representa nuestra marca y nuestra manera de hacer
+            las cosas.
           </p>
+
         </div>
 
 
         <div className="valores-grid">
 
           <div className="valor-card">
-            <div className="valor-icono">🌿</div>
+
+            <div className="valor-icono">
+              🌿
+            </div>
 
             <h3>Calidad</h3>
 
@@ -129,11 +160,15 @@ function Nosotros() {
               Seleccionamos cuidadosamente nuestro café para ofrecer
               siempre una experiencia de calidad.
             </p>
+
           </div>
 
 
           <div className="valor-card">
-            <div className="valor-icono">☕</div>
+
+            <div className="valor-icono">
+              ☕
+            </div>
 
             <h3>Tradición</h3>
 
@@ -141,23 +176,31 @@ function Nosotros() {
               Respetamos la tradición cafetera colombiana y el conocimiento
               transmitido de generación en generación.
             </p>
+
           </div>
 
 
           <div className="valor-card">
-            <div className="valor-icono">❤️</div>
+
+            <div className="valor-icono">
+              ❤️
+            </div>
 
             <h3>Pasión</h3>
 
             <p>
-              Amamos lo que hacemos y ponemos dedicación en cada taza de
-              café que llega a nuestros clientes.
+              Amamos lo que hacemos y ponemos dedicación en cada taza
+              de café que llega a nuestros clientes.
             </p>
+
           </div>
 
 
           <div className="valor-card">
-            <div className="valor-icono">🤝</div>
+
+            <div className="valor-icono">
+              🤝
+            </div>
 
             <h3>Compromiso</h3>
 
@@ -165,16 +208,20 @@ function Nosotros() {
               Trabajamos para construir relaciones basadas en la confianza,
               el respeto y la responsabilidad.
             </p>
+
           </div>
 
         </div>
+
       </section>
 
 
-      {/* 5. FOOTER GLOBAL */}
-     <Footer />
+      {/* =====================================
+          FOOTER
+      ====================================== */}
 
-    </div>
+      <Footer />
+    </>
   );
 }
 
