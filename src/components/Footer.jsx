@@ -1,6 +1,20 @@
 import { Link } from "react-router-dom";
+import "../Footer.css";
 
 function Footer() {
+
+  const pedirWhatsApp = () => {
+    const telefono = "573148272305";
+
+    const mensaje = encodeURIComponent(
+      "Hola, estoy interesado en comprar el Café Tradicional Almontea."
+    );
+
+    window.open(
+      `https://wa.me/${telefono}?text=${mensaje}`,
+      "_blank"
+    );
+  };
 
   return (
 
@@ -53,7 +67,6 @@ function Footer() {
               ◎
             </a>
 
-
           </div>
 
         </div>
@@ -85,8 +98,6 @@ function Footer() {
             Nosotros
           </Link>
 
-          
-
         </div>
 
 
@@ -100,13 +111,12 @@ function Footer() {
             Contáctanos
           </h3>
 
-          <a
-            href="https://wa.me/573148272305"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            className="footer-whatsapp"
+            onClick={pedirWhatsApp}
           >
             ◯ &nbsp; WhatsApp
-          </a>
+          </button>
 
           <a href="tel:+573148272305">
             ☎ &nbsp; 57 314 827 2305
@@ -138,7 +148,6 @@ function Footer() {
       </div>
 
     </footer>
-
   );
 }
 

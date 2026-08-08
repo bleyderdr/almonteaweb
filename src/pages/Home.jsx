@@ -347,12 +347,12 @@ function Home() {
 
               <div className="product-buttons">
 
-                <a
-                  href="/nuestro-cafe"
+                <Link
+                  to="/nuestro-cafe"
                   className="product-button saber-mas"
                 >
                   SABER MÁS
-                </a>
+                </Link>
 
 
                 <a

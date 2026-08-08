@@ -1,0 +1,427 @@
+/* =========================================================
+   FOOTER ALMONTEA
+========================================================= */
+
+.footer {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #102408;
+
+  color: #f4ead5;
+}
+
+
+/* =========================================================
+   LÍNEA SUPERIOR
+========================================================= */
+
+.footer::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: rgba(220, 214, 184, 0.35);
+}
+
+
+/* =========================================================
+   CONTENIDO PRINCIPAL
+========================================================= */
+
+.footer-content {
+  width: 100%;
+
+  max-width: 1200px;
+
+  margin: 0 auto;
+
+  padding: 70px 50px 55px;
+
+  box-sizing: border-box;
+
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1fr
+    1.3fr;
+
+  gap: 80px;
+}
+
+
+/* =========================================================
+   MARCA
+========================================================= */
+
+.footer-brand {
+  width: 100%;
+
+  max-width: 340px;
+
+  text-align: center;
+}
+
+.footer-logo {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  margin-bottom: 25px;
+}
+
+.footer-logo-icon {
+  width: 70px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  margin-bottom: 5px;
+
+  font-size: 35px;
+}
+
+.footer-logo h2 {
+  margin: 0;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 39px;
+
+  letter-spacing: 1px;
+
+  line-height: 1;
+
+  color: #f5ead5;
+}
+
+.footer-logo span {
+  margin-top: 7px;
+
+  font-size: 10px;
+
+  letter-spacing: 2px;
+
+  color: #d8cba9;
+}
+
+.footer-brand p {
+  margin: 0 0 25px;
+
+  font-size: 13px;
+
+  line-height: 1.7;
+
+  color: #e1dac7;
+}
+
+
+/* =========================================================
+   REDES SOCIALES
+========================================================= */
+
+.social-links {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 18px;
+}
+
+.social-links a {
+  width: 42px;
+
+  height: 42px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  border: 2px solid #e8dfc8;
+
+  border-radius: 50%;
+
+  font-size: 22px;
+
+  color: #f5ead5;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.social-links a:hover {
+  background: #f5ead5;
+
+  color: #102408;
+
+  transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   COLUMNAS
+========================================================= */
+
+.footer-column {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-start;
+
+  gap: 17px;
+}
+
+.footer-column h3 {
+  margin: 0 0 12px;
+
+  font-family: Georgia, "Times New Roman", serif;
+
+  font-size: 22px;
+
+  color: #f5ead5;
+}
+
+.footer-column a,
+.footer-column span {
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  color: #e1dac7;
+
+  text-decoration: none;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer-column a:hover {
+  color: #9abf5c;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   BOTÓN WHATSAPP DEL FOOTER
+========================================================= */
+
+.footer-whatsapp {
+  padding: 0;
+
+  border: none;
+
+  background: transparent;
+
+  color: #e1dac7;
+
+  font-family: Arial, sans-serif;
+
+  font-size: 14px;
+
+  cursor: pointer;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer-whatsapp:hover {
+  color: #9abf5c;
+
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   COPYRIGHT
+========================================================= */
+
+.footer-bottom {
+  width: 100%;
+
+  min-height: 70px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  padding: 20px;
+
+  box-sizing: border-box;
+
+  border-top:
+    1px solid rgba(220, 214, 184, 0.3);
+}
+
+.footer-bottom p {
+  margin: 0;
+
+  font-size: 13px;
+
+  line-height: 1.5;
+
+  text-align: center;
+
+  color: #d4ceb9;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+  .footer-content {
+    padding: 60px 35px 50px;
+
+    gap: 45px;
+  }
+
+  .footer-logo h2 {
+    font-size: 35px;
+  }
+
+  .footer-column h3 {
+    font-size: 20px;
+  }
+
+}
+
+
+/* =========================================================
+   MÓVIL
+========================================================= */
+
+@media (max-width: 750px) {
+
+  .footer-content {
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+
+    padding: 55px 25px 45px;
+  }
+
+
+  /* MARCA */
+
+  .footer-brand {
+    width: 100%;
+
+    max-width: 100%;
+  }
+
+  .footer-logo h2 {
+    font-size: 35px;
+  }
+
+  .footer-brand p {
+    max-width: 400px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    font-size: 13px;
+  }
+
+
+  /* COLUMNAS */
+
+  .footer-column {
+    width: 100%;
+
+    align-items: center;
+
+    text-align: center;
+
+    gap: 15px;
+  }
+
+  .footer-column h3 {
+    margin-bottom: 5px;
+
+    font-size: 22px;
+  }
+
+  .footer-column a,
+  .footer-column span,
+  .footer-whatsapp {
+    font-size: 14px;
+  }
+
+
+  /* COPYRIGHT */
+
+  .footer-bottom {
+    min-height: 65px;
+
+    padding: 18px 20px;
+  }
+
+  .footer-bottom p {
+    max-width: 350px;
+
+    font-size: 12px;
+  }
+
+}
+
+
+/* =========================================================
+   MÓVILES PEQUEÑOS
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .footer-content {
+    padding-left: 20px;
+
+    padding-right: 20px;
+
+    gap: 40px;
+  }
+
+  .footer-logo h2 {
+    font-size: 32px;
+  }
+
+  .footer-brand p {
+    font-size: 12px;
+  }
+
+  .footer-column h3 {
+    font-size: 20px;
+  }
+
+}
