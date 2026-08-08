@@ -164,13 +164,12 @@ function Home() {
 
           <div>
             <h3>
-              Empaque Resellable
+              Empaque Hermético
             </h3>
 
             <p>
-              En un recipiente bien
-              cerrado para conservar
-              su frescura.
+              Empaque que protege de la luz y el aire, 
+              conservando aroma y sabor intactos.
             </p>
           </div>
 

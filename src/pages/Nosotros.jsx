@@ -77,14 +77,9 @@ function Nosotros() {
           <h2>Nuestra misión</h2>
 
           <p>
-            Ofrecer un café colombiano de calidad, tostado y molido con
-            cuidado, llevando hasta nuestros clientes el auténtico sabor
-            de nuestra tierra.
-          </p>
-
-          <p>
-            Buscamos conectar a las personas con el café colombiano,
-            valorando el trabajo de quienes hacen posible cada taza.
+            Llevar café colombiano de excelente calidad directamente 
+            del productor al consumidor, ofreciendo un precio justo y 
+            una experiencia que inspire confianza en cada taza.
           </p>
 
         </div>
@@ -103,14 +98,10 @@ function Nosotros() {
           <h2>Nuestra visión</h2>
 
           <p>
-            Ser una marca de café reconocida por la calidad de sus
-            productos, el respeto por la tradición cafetera y la pasión
-            que ponemos en cada detalle.
-          </p>
+            Ser una marca colombiana reconocida por acercar el auténtico 
+            sabor del café a las familias, creciendo con calidad, 
+            honestidad y cercanía hasta convertirnos en una referencia nacional.
 
-          <p>
-            Queremos que Almontea sea sinónimo de café colombiano
-            auténtico, acercando el campo y sus sabores a cada hogar.
           </p>
 
         </div>
