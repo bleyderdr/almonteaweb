@@ -3,19 +3,10 @@
 ===================================== */
 
 .tips-page {
-
   min-height: calc(100vh - 115px);
-
-  background:
-    linear-gradient(
-      rgba(247, 237, 218, 0.96),
-      rgba(247, 237, 218, 0.96)
-    );
-
   padding: 65px 7% 80px;
-
   box-sizing: border-box;
-
+  background: #f7edda;
   color: #18140e;
 }
 
@@ -25,82 +16,48 @@
 ===================================== */
 
 .tips-header {
-
-  text-align: center;
-
   max-width: 850px;
-
   margin: 0 auto 55px;
+  text-align: center;
 }
 
-
 .tips-header h1 {
-
   margin: 0;
-
   font-family: Georgia, "Times New Roman", serif;
-
   font-size: 52px;
-
   font-weight: 700;
-
   color: #15120d;
 }
 
-
-/* Línea decorativa */
-
 .tips-divider {
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
-  gap: 15px;
-
+  width: 390px;
+  max-width: 90%;
   margin: 20px auto 22px;
 
-  width: 390px;
-
-  max-width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
 }
-
 
 .tips-divider span:first-child,
 .tips-divider span:last-child {
-
-  height: 2px;
-
-  background: #30281d;
-
   flex: 1;
+  height: 2px;
+  background: #30281d;
 }
 
-
 .coffee-bean {
-
   font-size: 28px;
-
   line-height: 1;
-
   color: #456d20;
 }
 
-
-/* Subtítulo */
-
 .tips-header p {
-
   margin: 0;
-
   font-family: Arial, sans-serif;
-
   font-size: 22px;
-
   line-height: 1.6;
-
   color: #302c25;
 }
 
@@ -110,15 +67,11 @@
 ===================================== */
 
 .tips-list {
-
   max-width: 1150px;
-
   margin: 0 auto;
 
   display: flex;
-
   flex-direction: column;
-
   gap: 28px;
 }
 
@@ -128,9 +81,7 @@
 ===================================== */
 
 .tip-card {
-
   width: 100%;
-
   min-height: 300px;
 
   display: flex;
@@ -138,13 +89,11 @@
   background: rgba(255, 250, 240, 0.75);
 
   border: 1px solid rgba(70, 55, 35, 0.12);
-
   border-radius: 16px;
 
   overflow: hidden;
 
-  box-shadow:
-    0 4px 14px rgba(55, 40, 20, 0.08);
+  box-shadow: 0 4px 14px rgba(55, 40, 20, 0.08);
 
   box-sizing: border-box;
 }
@@ -155,33 +104,24 @@
 ===================================== */
 
 .tip-image {
-
   width: 35%;
-
   min-height: 300px;
-
   flex-shrink: 0;
-
   overflow: hidden;
 }
 
-
 .tip-image img {
-
   width: 100%;
-
   height: 100%;
 
-  object-fit: cover;
-
   display: block;
+
+  object-fit: cover;
 
   transition: transform 0.4s ease;
 }
 
-
 .tip-card:hover .tip-image img {
-
   transform: scale(1.04);
 }
 
@@ -191,11 +131,9 @@
 ===================================== */
 
 .tip-content {
-
   flex: 1;
 
   display: flex;
-
   align-items: center;
 
   gap: 30px;
@@ -203,122 +141,47 @@
   padding: 40px 50px;
 }
 
-
-/* =====================================
-   NÚMERO
-===================================== */
-
 .tip-number {
-
   width: 70px;
-
   height: 70px;
-
   min-width: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   border-radius: 50%;
 
   background: #164315;
-
   color: #f7edda;
 
-  display: flex;
-
-  align-items: center;
-
-  justify-content: center;
-
   font-family: Georgia, "Times New Roman", serif;
-
   font-size: 22px;
-
   font-weight: 700;
 }
 
-
-/* =====================================
-   TEXTO
-===================================== */
-
 .tip-text {
-
   max-width: 650px;
 }
 
-
 .tip-text h2 {
-
   margin: 0 0 18px;
 
   font-family: Georgia, "Times New Roman", serif;
-
   font-size: 29px;
-
   line-height: 1.25;
 
   color: #18140e;
 }
 
-
 .tip-text p {
-
   margin: 0;
 
   font-family: Arial, sans-serif;
-
   font-size: 17px;
-
   line-height: 1.7;
 
   color: #38342d;
-}
-
-
-/* =====================================
-   BOTÓN
-===================================== */
-
-.tips-button-container {
-
-  display: flex;
-
-  justify-content: center;
-
-  margin-top: 42px;
-}
-
-
-.tips-button {
-
-  border: none;
-
-  background: #315f16;
-
-  color: white;
-
-  padding: 16px 48px;
-
-  border-radius: 7px;
-
-  font-family: Arial, sans-serif;
-
-  font-size: 14px;
-
-  font-weight: 700;
-
-  cursor: pointer;
-
-  transition:
-    background 0.25s ease,
-    transform 0.25s ease;
-}
-
-
-.tips-button:hover {
-
-  background: #244a0e;
-
-  transform: translateY(-2px);
 }
 
 
@@ -329,54 +192,36 @@
 @media (max-width: 900px) {
 
   .tips-page {
-
-    padding: 50px 5% 60px;
+    padding: 50px 5% 65px;
   }
 
-
   .tips-header h1 {
-
     font-size: 44px;
   }
 
-
   .tips-header p {
-
     font-size: 19px;
   }
-
 
   .tip-content {
-
-    padding: 30px;
-
     gap: 20px;
+    padding: 30px;
   }
 
-
   .tip-number {
-
     width: 60px;
-
     height: 60px;
-
     min-width: 60px;
-
     font-size: 19px;
   }
 
-
   .tip-text h2 {
-
     font-size: 24px;
   }
 
-
   .tip-text p {
-
     font-size: 15px;
   }
-
 }
 
 
@@ -387,86 +232,130 @@
 @media (max-width: 650px) {
 
   .tips-page {
-
-    padding: 40px 20px 55px;
+    padding: 40px 18px 55px;
   }
 
-
   .tips-header {
-
     margin-bottom: 35px;
   }
 
-
   .tips-header h1 {
-
-    font-size: 38px;
+    font-size: 36px;
   }
 
+  .tips-divider {
+    width: 100%;
+    gap: 10px;
+    margin: 16px auto 18px;
+  }
+
+  .coffee-bean {
+    font-size: 24px;
+  }
 
   .tips-header p {
-
-    font-size: 17px;
+    font-size: 16px;
+    line-height: 1.55;
   }
 
+  .tips-header p br {
+    display: none;
+  }
+
+
+  /* TARJETAS */
+
+  .tips-list {
+    gap: 22px;
+  }
 
   .tip-card {
-
     flex-direction: column;
+    border-radius: 12px;
   }
 
+
+  /* IMAGEN */
 
   .tip-image {
-
     width: 100%;
-
-    height: 230px;
-
-    min-height: 230px;
+    height: 210px;
+    min-height: 210px;
   }
 
+
+  /* CONTENIDO */
 
   .tip-content {
-
-    padding: 28px 25px;
+    padding: 25px 22px 28px;
 
     align-items: flex-start;
-  }
 
+    gap: 16px;
+  }
 
   .tip-number {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
 
-    width: 52px;
-
-    height: 52px;
-
-    min-width: 52px;
-
-    font-size: 17px;
+    font-size: 16px;
   }
 
+  .tip-text {
+    max-width: none;
+  }
 
   .tip-text h2 {
-
-    font-size: 21px;
-
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 1.3;
   }
-
 
   .tip-text p {
-
-    font-size: 15px;
-
+    font-size: 14px;
     line-height: 1.6;
   }
+}
 
 
-  .tips-button {
+/* =====================================
+   MÓVILES PEQUEÑOS
+===================================== */
 
-    width: 100%;
+@media (max-width: 400px) {
 
-    max-width: 260px;
+  .tips-page {
+    padding-left: 14px;
+    padding-right: 14px;
   }
 
+  .tips-header h1 {
+    font-size: 32px;
+  }
+
+  .tip-image {
+    height: 190px;
+    min-height: 190px;
+  }
+
+  .tip-content {
+    padding: 22px 18px 25px;
+    gap: 13px;
+  }
+
+  .tip-number {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
+    font-size: 15px;
+  }
+
+  .tip-text h2 {
+    font-size: 18px;
+  }
+
+  .tip-text p {
+    font-size: 13px;
+  }
 }
