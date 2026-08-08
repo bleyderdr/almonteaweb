@@ -23,8 +23,8 @@ function Navbar() {
       {/* LOGO */}
       <Link to="/" className="navbar-logo">
         <img
-          src={`${process.env.PUBLIC_URL}/images/historia-cafe.jpg`}
-          alt="Caficultor recolectando café colombiano"
+          src={`${process.env.PUBLIC_URL}/images/logo-almontea.png`}
+          alt="Almontea Café Tradicional"
         />
       </Link>
 
