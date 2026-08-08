@@ -85,9 +85,7 @@ function Footer() {
             Nosotros
           </Link>
 
-          <Link to="/contacto">
-            Contacto
-          </Link>
+          
 
         </div>
 
