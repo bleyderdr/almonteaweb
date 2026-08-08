@@ -190,7 +190,7 @@ function Home() {
         <div className="history-image">
 
           <img
-            src="/images/historia-cafe.jpg"
+            src={`${process.env.PUBLIC_URL}/images/historia-cafe.jpg`}
             alt="Caficultor recolectando café colombiano"
           />
 
@@ -265,7 +265,7 @@ function Home() {
             <div className="product-image">
 
               <img
-                src="/images/producto-almontea-media-libra.jpeg"
+                src={`${process.env.PUBLIC_URL}/images/producto-almontea-media-libra.jpeg`}
                 alt="Café Tradicional Almontea de 1 libra"
               />
 
@@ -323,7 +323,7 @@ function Home() {
             <div className="product-image">
 
               <img
-                src="/images/producto-almontea-media-libra.jpeg"
+                src={`${process.env.PUBLIC_URL}/images/producto-almontea-media-libra.jpeg`}
                 alt="Café Tradicional Almontea de media libra"
               />
 

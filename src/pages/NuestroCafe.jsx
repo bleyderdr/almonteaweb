@@ -101,7 +101,7 @@ function NuestroCafe() {
             <div className="producto-imagen">
 
               <img
-                src="/images/cafe-almontea.png"
+                src={`${process.env.PUBLIC_URL}/images/cafe-almontea.png`}
                 alt="Café Tradicional Almontea 500 gramos"
               />
 
