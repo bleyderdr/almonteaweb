@@ -168,7 +168,7 @@ function Home() {
             </h3>
 
             <p>
-              Empaque que protege de la luz y el aire, 
+              Empaque que protege de la luz y el aire,
               conservando aroma y sabor intactos.
             </p>
           </div>
@@ -255,9 +255,9 @@ function Home() {
         <div className="productos-grid">
 
 
-          {/* =========================
-        PRODUCTO 1 LIBRA
-    ========================== */}
+        {/* =========================
+          PRODUCTO 1 LIBRA
+          ========================== */}
 
           <article className="product-card">
 
@@ -276,9 +276,13 @@ function Home() {
               <h3>
                 Café Tradicional
               </h3>
+              
+              <h3>
+                1 Libra
+              </h3>
 
               <p className="product-weight">
-                1 Libra · 500 g
+                500 g
               </p>
 
               <div className="product-price">
@@ -335,8 +339,12 @@ function Home() {
                 Café Tradicional
               </h3>
 
+              <h3>
+                Media Libra
+              </h3>
+
               <p className="product-weight">
-                Media Libra · 250 g
+                250 g
               </p>
 
               <div className="product-price">
