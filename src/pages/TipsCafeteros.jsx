@@ -42,7 +42,7 @@ function TipsCafeteros() {
 
             <div className="tip-image">
               <img
-                src={`${process.env.PUBLIC_URL}/images/tip-cafe-1.jpg`}
+                src={`${process.env.PUBLIC_URL}/images/tip-cafe-1.png`}
                 alt="Café almacenado correctamente"
               />
             </div>
@@ -78,7 +78,7 @@ function TipsCafeteros() {
 
             <div className="tip-image">
               <img
-                src={`${process.env.PUBLIC_URL}/images/tip-cafe-2.jpg`}
+                src={`${process.env.PUBLIC_URL}/images/tip-cafe-2.png`}
                 alt="Preparación del café"
               />
             </div>
@@ -114,7 +114,7 @@ function TipsCafeteros() {
 
             <div className="tip-image">
               <img
-                src={`${process.env.PUBLIC_URL}/images/tip-cafe-3.jpg`}
+                src={`${process.env.PUBLIC_URL}/images/tip-cafe-3.png`}
                 alt="Café preparado"
               />
             </div>

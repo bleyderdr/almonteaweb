@@ -32,7 +32,7 @@ function Nosotros() {
 
         <div className="historia-imagen">
           <img
-            src={`${process.env.PUBLIC_URL}/images/historia-almontea.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/historia-almontea.png`}
             alt="Caficultores de Almontea"
           />
         </div>

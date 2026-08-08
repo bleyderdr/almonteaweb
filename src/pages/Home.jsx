@@ -190,7 +190,7 @@ function Home() {
         <div className="history-image">
 
           <img
-            src={`${process.env.PUBLIC_URL}/images/historia-cafe.jpg`}
+            src={`${process.env.PUBLIC_URL}/images/historia-cafe.png`}
             alt="Caficultor recolectando café colombiano"
           />
 
