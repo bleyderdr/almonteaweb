@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Navbar.css";
+import { FaWhatsapp } from "react-icons/fa";
 
 function Navbar() {
 
@@ -110,8 +111,8 @@ function Navbar() {
         onClick={pedirWhatsApp}
       >
         PEDIR POR WHATSAPP
-
-        <span>◉</span>
+        <span>  </span>
+        <FaWhatsapp />
       </button>
 
 

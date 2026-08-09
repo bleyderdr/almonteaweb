@@ -1,5 +1,6 @@
 import "../App.css";
 import Footer from "../components/Footer";
+import { FaWhatsapp } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Home() {
@@ -62,7 +63,9 @@ function Home() {
               className="btn-whatsapp"
             >
               PEDIR POR WHATSAPP
-              <span>◉</span>
+              
+
+              <FaWhatsapp />
             </a>
 
             <Link
