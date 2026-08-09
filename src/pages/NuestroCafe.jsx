@@ -1,5 +1,6 @@
 import React from "react";
 import "../NuestroCafe.css";
+import { FaWhatsapp } from "react-icons/fa";
 
 function NuestroCafe() {
 
@@ -91,7 +92,8 @@ function NuestroCafe() {
                 onClick={pedirWhatsApp}
               >
                 PEDIR POR WHATSAPP
-                <span>◉</span>
+                <span></span>
+                <FaWhatsapp />
               </button>
 
             </div>
