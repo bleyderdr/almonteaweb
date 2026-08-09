@@ -1,4 +1,6 @@
 import { FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaEnvelope} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "../Footer.css";
 
@@ -116,7 +118,7 @@ function Footer() {
             className="footer-whatsapp"
             onClick={pedirWhatsApp}
           >
-            ◯ &nbsp; WhatsApp
+            <FaWhatsapp /> &nbsp; WhatsApp
           </button>
 
           <a href="tel:+573148272305">
@@ -124,7 +126,7 @@ function Footer() {
           </a>
 
           <a href="mailto:almontea.cafe@gmail.com">
-            ◎ &nbsp; almontea.cafe@gmail.com
+            <FaEnvelope /> &nbsp; almontea.cafe@gmail.com
           </a>
 
           <span>
